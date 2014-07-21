@@ -122,6 +122,18 @@ body {
   font-weight: bold;
 }
 
+/*
+* No IE!
+*/
+.no-ie h1 {
+  display: none;
+  font-size: 70px;
+  padding: 10px;
+  border: 2px solid red;
+  color: red;
+  border-radius: 15px;
+}
+
 
 /*
  * Footer

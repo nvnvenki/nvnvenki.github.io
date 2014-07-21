@@ -45,11 +45,22 @@
               <p>@<a href="http://github.com/nvnvenki">N Venkatesh Naik</a></p>
             </div>
           </div>
+          <div class="inner cover no-ie">
+            <h1><span class="glyphicon glyphicon-warning-sign"></span>Please Use A Browser!!!</h1>
+          </div>
         </div>
       </div>
     </div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      var mainContent = $(".inner.cover");
+      var noIe = $(".inner.cover.no-ie");
+      if(navigator.appName === 'Microsoft Internet Explorer') {
+        $(".inner.cover.no-ie").show();
+        $(".inner.cover").hide();
+      }
+    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
