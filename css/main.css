@@ -116,27 +116,37 @@ a:hover {
 }
 
 
-.git:hover {
+.git:hover,
+.git:active,
+.git:focus {
   color: white !important;
   background: #444 !important;
 }
 
-.linkedin:hover {
+.linkedin:hover,
+.linkedin:active,
+.linkedin:focus {
   color: white !important;
   background: #007bb6 !important;
 }
 
-.twitter:hover {
+.twitter:hover,
+.twitter:active,
+.twitter:focus {
   color: white !important;
   background: #00a0d1 !important;
 }
 
-.google:hover {
+.google:hover,
+.google:active,
+.google:focus {
   color: white !important;
   background: #db4a39 !important;
 }
 
-.facebook:hover {
+.facebook:hover,
+.facebook:active,
+.facebook:focus {
   color: white !important;
   background: #3b5998 !important;
 }
