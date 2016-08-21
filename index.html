@@ -4,92 +4,77 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Personal Site">
+    <meta name="author" content="Venkatesh Naik">
     <link rel="icon" href="favicon.ico">
-
     <title>Benki | N Venkatesh Naik | Mad </title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/ripples.min.css" rel="stylesheet">
-    <link href="css/material-wfont.min.css" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-   
-    
-    <!-- Custom styles -->
     <link href="css/main.css" rel="stylesheet">
+    <style type="text/css">
+      .pace {
+        -webkit-pointer-events: none;
+        pointer-events: none;
 
-    <!-- HTML5 shim and Respond.js Internet Error 8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      .pace-inactive {
+        display: none;
+      }
+
+      .pace .pace-progress {
+        background: #29d;
+        position: fixed;
+        z-index: 2000;
+        top: 0;
+        right: 100%;
+        width: 100%;
+        height: 2px;
+      }
+    </style>
   </head>
-
-  <body>
-    <div class="site-wrapper" >
-      <div class="pre-loader" id="pre-loader">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="site-wrapper-inner hide" id="main-content">
-        <div class="cover-container">
-          <div class="masthead clearfix">
-            <div class="inner">
-            </div>
-          </div>
-          <div class="inner cover">
-            <img src="img/me.jpg" class="img-responsive img-circle">
-            <h1 class="cover-heading">Venkatesh Naik N</h1>
-            <p class="lead">
-              Hi, This is venki also known as 'Benki' among friends.
-            </p>
-          </div>
-          <div class="mastfoot">
-            <div class="inner">
-              <h4>Know more about me!</h4>
-              <ul class="social-icons-list">
-                <li>
-                  <a href="http://github.com/nvnvenki" target="_blank">
-                    <span class="fa fa-github fa-2x btn btn-raised git"></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/nvnvenki" target="_blank">
-                    <span class="fa fa-facebook fa-2x btn btn-raised facebook"></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/nvnvenki" target="_blank">
-                    <span class="fa fa-twitter fa-2x btn btn-raised twitter"></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://plus.google.com/+NVenkateshNaik" target="_blank">
-                    <span class="fa fa-google-plus fa-2x btn btn-raised google"></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://in.linkedin.com/pub/n-venkatesh-naik/54/a93/145" target="_blank">
-                    <span class="fa fa-linkedin fa-2x btn btn-raised linkedin"></span>
-                  </a>
-                </li>
+  <body class="is-loading">
+    <!-- Wrapper -->
+      <div id="wrapper">
+        <!-- Main -->
+          <section id="main">
+            <header>
+              <span class="avatar"><img src="img/me.jpg" alt="venki" height="122" width="115" /></span>
+              <h1 class="name">Venkatesh Naik N</h1>
+              <p class="tagline">Hi, This is venki also known as 'Benki' among friends.</p>
+            </header>
+            <footer>
+              <p><small>Know more about me!</small></p>
+              <ul class="icons">
+                <li><a href="https://twitter.com/nvnvenki" class="fa-twitter">Twitter</a></li>
+                <li><a href="https://github.com/nvnvenki" class="fa-github">Github</a></li>
+                <li><a href="https://www.instagram.com/nvnvenki" class="fa-instagram">Instagram</a></li>
+                <li><a href="https://www.facebook.com/nvnvenki" class="fa-facebook">Facebook</a></li>
+                <li><a href="https://in.linkedin.com/pub/n-venkatesh-naik/54/a93/145" class="fa-linkedin">Linkedin</a></li>
               </ul>
-              
-            </div>
-          </div>
-        </div>
+            </footer>
+          </section>
+          <footer id="footer">
+            <ul class="copyright">
+            </ul>
+          </footer>
       </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="js/ripples.min.js"></script>
-    <script src="js/material.min.js"></script>
-    <script src="js/main.js"></script>
+      <script>
+        if ('addEventListener' in window) {
+          window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+          document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+        }
+      </script>
+      <script data-pace-options='{ "ajax": false }' src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+      <script>
+        paceOptions = {
+          elements: false,
+          restartOnPushState: false,
+          restartOnRequestAfter: false
+        }
+      </script>
+
   </body>
 </html>
