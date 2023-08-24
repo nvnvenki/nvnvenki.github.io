@@ -13,14 +13,14 @@ h1, h2 {
   height: auto;
   border-radius: 2rem;
   margin: 1.5rem;
-  box-shadow: 1px 1px 25px #303030;
+  box-shadow: 1px 0.5px 25px #141527;
 }
 
 .slide .gif {
   width: auto;
   border-radius: 2rem;
   margin: 2rem;
-  box-shadow: 1px 1px 25px #303030;
+  box-shadow: 1px 0.5px 25px #141527;
 }
 
 .width-250 {
@@ -46,7 +46,7 @@ h1, h2 {
 }
 
 .red {
-  color:#F9667E;
+  color:#ff4033;
 }
 
 .font {
