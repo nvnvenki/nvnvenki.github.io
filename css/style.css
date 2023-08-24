@@ -24,11 +24,21 @@ h1, h2 {
 }
 
 .width-250 {
-  width: 300px !important;
+  width: 280px !important;
 }
 
 .width-300 {
   width: 350px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .width-250 {
+    width: 400px !important;
+  }
+
+  .width-300 {
+    width: 450px !important;
+  }
 }
 
 .image.heart {
