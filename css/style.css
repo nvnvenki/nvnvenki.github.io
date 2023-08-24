@@ -58,3 +58,14 @@ h1, h2 {
 .green {
   color: rgb(121, 205, 121);
 }
+
+.button {
+  color: white;
+  outline: 0;
+  padding: 1rem 2rem;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  border: 1px solid;
+  text-decoration: none;
+}
