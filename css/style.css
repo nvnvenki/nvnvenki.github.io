@@ -1,3 +1,60 @@
 .reveal {
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+}
+
+
+h1, h2 {
+  font-family: 'Satisfy', cursive !important;
+}
+
+.slide .image {
+  width: 80%;
+  height: auto;
+  border-radius: 2rem;
+  margin: 1.5rem;
+  box-shadow: 1px 1px 25px #303030;
+}
+
+.slide .gif {
+  width: auto;
+  border-radius: 2rem;
+  margin: 2rem;
+  box-shadow: 1px 1px 25px #303030;
+}
+
+.width-250 {
+  width: 250px !important;
+}
+
+.width-300 {
+  width: 300px !important;
+}
+
+.image.heart {
+  box-shadow: 1px 1px 25px #303030;
+}
+
+.red {
+  color:#F9667E;
+}
+
+.font {
+  font-family: 'Satisfy', cursive !important;
+}
+
+.font1 {
   font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+.font-size-m {
+  font-size: 1.6rem; 
+}
+
+.font-size-l {
+  font-size: 2rem; 
+}
+
+.green {
+  color: rgb(121, 205, 121);
 }
